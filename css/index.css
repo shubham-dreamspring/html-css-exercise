@@ -81,6 +81,7 @@ nav a {
 }
 .search-bar-section > img {
   margin-top: 4vh;
+  margin-bottom: 1.5rem;
   max-width: 272px;
   max-height: 92px;
   aspect-ratio: auto 272 / 92;
@@ -119,6 +120,39 @@ nav a {
   word-wrap: break-word;
   color: rgba(0, 0, 0, 0.87);
   margin-bottom: 0.3125rem;
+}
+.trending-box {
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 100%;
+}
+.trending-box span {
+  font-size: 1.25rem;
+  color: #202124;
+  display: inline-block;
+  margin-bottom: 0.875rem;
+}
+.trending-box ul {
+  list-style-type: none;
+}
+.trending-box li:before {
+  content: "";
+  margin-right: 1.2rem;
+  background-image: url(../assets/trending.svg);
+  filter: invert(19%) sepia(9%) saturate(461%) hue-rotate(163deg)
+    brightness(98%) contrast(81%);
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+}
+.trending-box li {
+  display: flex;
+  font-size: 1rem;
+  color: #202124;
+  align-items: center;
+  margin-left: 0.5rem;
+  border-bottom: 1px solid #dadce0;
+  min-height: 3.25rem;
 }
 @media (max-width: 480px) {
   .search-bar-section img {
