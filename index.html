@@ -93,18 +93,18 @@
     </nav>
     <section class="search-bar-section">
       <img src="assets/logo.png" alt="Google logo Image" />
-      <form>
+      <form action="https://google.com/search" method="get">
         <div>
           <img id="search-icon" src="assets/search.svg" />
-          <input type="text" />
+          <input type="text" name="q" />
           <img class="not-for-mobile" src="assets/mic.svg" />
           <img class="not-for-mobile" src="assets/cam.svg" />
         </div>
+        <article>
+          <button type="submit" value="submit">Google Search</button>
+          <button>I'm Feeling Lucky</button>
+        </article>
       </form>
-      <article >
-        <button>Google Search</button>
-        <button>I'm Feeling Lucky</button>
-      </article>
     </section>
     <aside class="trending-box mobile-only">
       <span>Trending searches</span>
