@@ -166,6 +166,23 @@ nav a {
   border-radius: 1.5rem;
   padding: 0.3125rem 0.5rem 0 0.875rem;
 }
+.search-bar-section > article {
+  margin-top: 5vh;
+  width: 66vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-bar-section > article :first-child {
+  margin-right: 2rem;
+}
+.search-bar-section > article button {
+    height: 5vh;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: #70757a;
+  }
+  
 #search-icon {
   filter: invert(65%) sepia(2%) saturate(1164%) hue-rotate(169deg)
     brightness(98%) contrast(93%);
@@ -312,6 +329,9 @@ footer a {
     display: inline-block;
   }
   .not-for-mobile {
+    display: none;
+  }
+  .search-bar-section > article{
     display: none;
   }
 }
