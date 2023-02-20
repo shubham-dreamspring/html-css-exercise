@@ -289,13 +289,11 @@ footer > :first-child {
   border-top: 1px solid #dadce0;
   border-bottom: 1px solid #dadce0;
 }
-
+footer > .not-for-mobile {
+  margin-top: 1rem;
+}
 footer > .not-for-mobile :first-of-type {
-  display: flex;
-  margin: 1rem 0;
-  margin-left: -3.5rem;
-  justify-content: center;
-  align-items: center;
+  margin-left: 43%;
 }
 footer div span::before {
   content: "";
