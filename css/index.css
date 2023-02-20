@@ -251,8 +251,17 @@ nav .mobile-only a {
 .trending-box span {
   font-size: 1.25rem;
   color: var(--primary-text-color);
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 0.875rem;
+}
+.trending-box span::after {
+  content: "";
+  background-image: url(../assets/ellipsis-vertical-svgrepo-com.svg);
+  background-size: contain;
+  height: 1.25rem;
+  width: 20px;
 }
 .trending-box ul {
   list-style-type: none;
