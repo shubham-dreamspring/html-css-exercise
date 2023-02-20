@@ -293,7 +293,7 @@ footer > :first-child {
 footer > .not-for-mobile :first-of-type {
   display: flex;
   margin: 1rem 0;
-
+  margin-left: -3.5rem;
   justify-content: center;
   align-items: center;
 }
