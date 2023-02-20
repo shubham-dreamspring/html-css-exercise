@@ -17,7 +17,6 @@ body {
   min-height: 100vh;
   font-family: var(--font-family);
   color: var(--primary-text-color);
-  background: var(--background-color);
 }
 nav {
   display: flex;
@@ -61,7 +60,8 @@ nav .mobile-only a {
   color: var(--secondary-background-color);
 }
 #menu-link {
-  margin: auto 1rem;
+  margin: auto 0.5rem;
+  padding: 0.5rem;
   display: inline-block;
   cursor: pointer;
 }
@@ -75,6 +75,10 @@ nav .mobile-only a {
 }
 #menu-link input:checked + #menu-bar {
   visibility: visible;
+}
+#menu-link:hover {
+  background: rgba(60, 64, 67, 0.08);
+  border-radius: 50%;
 }
 #menu-bar {
   visibility: hidden;
@@ -105,21 +109,28 @@ nav .mobile-only a {
 
 #menu-bar li {
   width: 96px;
-  height: 105px;
-  color: rgba(0, 0, 0, 0.87);
+  height: 96px;
+  color: #202124;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "Google Sans", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.09px;
+  line-height: 18px;
 }
 
 #menu-bar li::before {
-  height: 71px;
-  width: 71px;
+  height: 53px;
+  width: 53px;
   content: "";
   background-image: url(../assets/sprites.png);
-  background-position: 0 calc(var(--n) * -76.8px);
+  background-position: 0 calc(var(--n) * -57.28px);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -193,9 +204,20 @@ nav .mobile-only a {
   margin-right: 1.5rem;
 }
 .search-bar-section form > article button {
-  height: 5vh;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
 }
 
 #search-icon {
@@ -267,6 +289,7 @@ footer > :first-child {
   border-top: 1px solid #dadce0;
   border-bottom: 1px solid #dadce0;
 }
+
 footer > .not-for-mobile :first-of-type {
   display: flex;
   margin: 1rem 0;
@@ -282,6 +305,7 @@ footer div span::before {
   background-size: contain;
   height: 1rem;
   width: 1rem;
+  margin-right: 0.4rem;
 }
 
 .footer-links {
