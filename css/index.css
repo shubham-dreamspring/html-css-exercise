@@ -55,7 +55,7 @@ nav a {
   text-align: center;
   cursor: pointer;
 }
-nav .mobile-only a {
+#navbar-all-image a {
   font-weight: 700;
   color: var(--secondary-background-color);
 }
@@ -152,7 +152,9 @@ nav .mobile-only a {
   border-radius: 0.25rem;
   background-color: var(--button-color);
 }
-.mobile-only {
+#navbar-all-image,
+.trending-box,
+#footer-empty-div {
   display: none;
 }
 .search-bar-section {
@@ -298,12 +300,7 @@ footer > :first-child {
   border-top: 1px solid #dadce0;
   border-bottom: 1px solid #dadce0;
 }
-footer > .not-for-mobile {
-  margin-top: 1rem;
-}
-footer > .not-for-mobile :first-of-type {
-  margin-left: 47%;
-}
+
 footer div span::before {
   content: "";
   background-image: url(../assets/carbon.png);
@@ -371,9 +368,6 @@ footer a {
   .footer-links-mobile {
     display: flex;
   }
-  .footer-links {
-    display: none;
-  }
   .search-bar-section {
     margin-bottom: inherit;
   }
@@ -381,17 +375,23 @@ footer a {
     max-width: 160px;
     max-height: 56px;
   }
-  .mobile-only {
+
+  #navbar-all-image,
+  .trending-box,
+  #footer-empty-div {
     display: inline-block;
   }
-  .not-for-mobile {
-    display: none;
-  }
+
+  #navbar-about-store,
+  #navbar-gmail-images,
+  #search-bar-mic-icon,
+  #search-bar-cam-icon,
+  .footer-links,
   .search-bar-section form > article {
     display: none;
   }
 }
-.mobile-only .active {
+#navbar-all-image .active {
   color: var(--button-color);
   border-bottom: 2px solid var(--button-color);
 }
