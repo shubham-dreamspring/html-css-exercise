@@ -10,16 +10,16 @@
   </head>
   <body>
     <nav>
-      <div class="not-for-mobile">
+      <div id="navbar-about-store">
         <a href="">About</a>
         <a href="">Store</a>
       </div>
-      <div class="mobile-only">
+      <div id="navbar-all-image">
         <a class="active" href="">ALL</a>
         <a href="">IMAGES</a>
       </div>
       <div>
-        <div class="not-for-mobile">
+        <div id="navbar-gmail-images">
           <a href="">Gmail</a>
           <a href="">Images</a>
         </div>
@@ -97,8 +97,8 @@
         <div>
           <img id="search-icon" src="assets/search.svg" />
           <input type="text" name="q" />
-          <img class="not-for-mobile" src="assets/mic.svg" />
-          <img class="not-for-mobile" src="assets/cam.svg" />
+          <img id="search-bar-mic-icon" src="assets/mic.svg" />
+          <img id="search-bar-cam-icon" src="assets/cam.svg" />
         </div>
         <article>
           <button type="submit" value="submit">Google Search</button>
@@ -106,7 +106,7 @@
         </article>
       </form>
     </section>
-    <aside class="trending-box mobile-only">
+    <aside class="trending-box">
       <span>Trending searches</span>
 
       <ul>
@@ -119,10 +119,7 @@
       </ul>
     </aside>
     <footer>
-      <div class="mobile-only"></div>
-      <div class="not-for-mobile">
-        <span>Carbon neutral since 2007</span>
-      </div>
+      <div id="footer-empty-div"></div>
       <div class="footer-links-mobile">
         <div>
           Dark theme: off
@@ -141,6 +138,9 @@
           <a href="">Advertising</a>
           <a href="">Business</a>
           <a href="">How search works</a>
+        </div>
+        <div id="carbon-neutral-span">
+          <span>Carbon neutral since 2007</span>
         </div>
         <div>
           <a href="">Privacy</a>
